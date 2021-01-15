@@ -1,6 +1,6 @@
 const uploadFile = require("../middleware/upload");
 const fs = require("fs");
-const baseUrl = "https://skydreamtours.com/files";
+const baseUrl = "https://skydreamtours.com/files/";
 
 const upload = async (req, res) => {
   try {
