@@ -5,6 +5,10 @@ const app = express();
 global.__basedir = __dirname;
 
 app.use(cors({
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Credentials": true,
+  "Access-Control-Allow-Headers": "Origin,Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
   credentials: true,
 }));
 
