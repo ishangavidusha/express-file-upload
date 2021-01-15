@@ -4,7 +4,9 @@ const app = express();
 
 global.__basedir = __dirname;
 
-app.use(cors());
+app.use(cors({
+  credentials: true,
+}));
 
 const initRoutes = require("./src/routes");
 
